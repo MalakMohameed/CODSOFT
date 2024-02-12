@@ -1,2 +1,2 @@
 # CODSOFT
-Software internship projects 
+Software engineering internship projects 
