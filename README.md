@@ -1,2 +1,2 @@
 # CODSOFT
-Web development internship 1st project
+Web Development internship Tasks
