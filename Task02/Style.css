@@ -60,6 +60,7 @@ section {
 }
 #skills ul li {
     display: inline-block;
+    text-align: center;
     margin: 0 10px; 
 }
 #Resume-form button{
