@@ -95,10 +95,13 @@ section ul {
 }
 
 .skills ul li {
-    color:white;
+    color:1d2f6d;
     margin: 0 10px;
     white-space: nowrap; 
     font-size: 18px;
+    background-color: #ffd369 ;
+    border-radius: 30px;
+    padding: 10px;
 }   
 
 .projects { 
@@ -154,7 +157,7 @@ form {
 button {
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 9px;
     background-color: #1d2f6d;
     color: #fff;
     cursor: pointer;
