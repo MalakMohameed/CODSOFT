@@ -34,7 +34,7 @@
                 When not immersed in lines of code or exploring virtual worlds,<br> she enjoys connecting with fellow adventurers for coding and gaming escapades.<br>
                 Don't let her caffeine sensitivity fool you; Malak's energy and enthusiasm for technology know no bounds!<br>
             </p>
-            <img src="https://media.istockphoto.com/id/1371856110/vector/woman-writing-code.jpg?s=612x612&w=0&k=20&c=FwzJ3X-4Cg0yxnt1N93Tikip6dv-mqC3a72TIM_OdNo=" style="position: absolute; top: 820px; right: 100px; width: 560px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);">
+            <img src="https://media.istockphoto.com/id/1371856110/vector/woman-writing-code.jpg?s=612x612&w=0&k=20&c=FwzJ3X-4Cg0yxnt1N93Tikip6dv-mqC3a72TIM_OdNo=" style="position: absolute; top: 840px; right: 50px; width: 560px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); border-radius: 30px;">
         </section>
 
 
@@ -93,7 +93,7 @@
             <br><br><br>    
         </section>  
         <br><br>        
-        <section id="resume">
+        <section id="resume" style="background-color: #ffd369; border-radius: 30px; display: inline-block; margin: 0 auto;">
             <h2><i class="fas fa-file"></i> Resume</h2>
             <form id="resume-form" action="https://flowcv.com/resume/esu02j7tqp" method="get" target="_blank">
                 <button type="submit">Download My Resume</button>
@@ -101,18 +101,40 @@
         </section>
 <br><br>
         <section id="contact">
-            <h2><i class="fas fa-phone"></i> Contact Me</h2>
+            <h2> Contact Me</h2>
             <form id="contact-form">
-                <input type="text" placeholder="Name" style="padding: 5px;">
-                <input type="email" placeholder="Email" style="padding: 5px;">
-                <textarea placeholder="Message" style="padding: 5px; position: relative; top: 8px;"></textarea>
-                <button type="submit">Send</button>
+
+                <button id="phone" type="button"  onclick="callPhoneNumber()">
+                    <i class="fas fa-phone"></i>
+                    <span>+201004101925</span>
+                </button>
+
+                <button id="email" type="button" onclick="openEmail()">
+                    <i class="fas fa-inbox"></i> 
+                    <span>malakmohamedabdelrazeq04@gmail.com</span>
+                </button>
             </form>
         </section>
 
         <footer>
             <p>&copy; Malak's Portfolio</p>
         </footer>
-        
+
+        <script>
+            function openEmail() {
+                var emailAddress = 'malakmohamedabdelrazeq04@gmail.com';
+                var subject = 'Inquiry';
+                var body = 'Hello,\n\nI have an inquiry about...';
+                var mailtoLink = 'mailto:' + emailAddress + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+                window.location.href = mailtoLink;
+            }
+
+            function callPhoneNumber() {
+                var phoneNumber = '+1234567890'; 
+                var telLink = 'tel:' + phoneNumber;
+                window.open(telLink);
+            }
+
+        </script>
     </body>
     </html>
